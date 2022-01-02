@@ -1,0 +1,22 @@
+---
+title: Breakout session 2
+date: "2022-02-25"
+author: inSileco Inc
+output: html_document
+---
+
+# A story of penguins
+
+This is the story of three species of penguins.
+
+```{r graph, echo = FALSE, fig.height=5, fig.width=7, fig.align='center'}
+library(palmerpenguins)
+plot(x = penguins$body_mass_g,
+     y = penguins$bill_length_mm,
+     main = "Bill length as a function of body mass",
+     xlab = "Body mass (g)",
+     ylab = "Bill length (mm)",
+     col = "#5d2756",
+     bg = "#5d275699",
+     pch = 21)
+```
